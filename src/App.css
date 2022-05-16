@@ -210,7 +210,7 @@ p {
 
 }
 
-.Year-Month {}
+
 
 .Day {
   font-size: 3.0rem;
@@ -227,7 +227,7 @@ p {
   .list {
     margin-left: 0;
     margin-top: 50px;
-    margin-bottom: 50px;
+
   }
 
   .txt p {
@@ -241,5 +241,12 @@ p {
   .Day {
     padding-left: 10px;
 
+  }
+}
+
+@media(max-width:500px) {
+  .App {
+    max-width: calc(100% - 60px);
+    margin: 50px auto;
   }
 }
