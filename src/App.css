@@ -1,38 +1,244 @@
+@font-face {
+  font-family: 'SeoulHangangM';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulHangangM.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+address,
+caption,
+em {
+  font-weight: normal;
+  font-style: normal;
+}
+
+fieldset,
+img,
+input {
+  border: 0 none;
+  outline: none;
+}
+
+input,
+select,
+textarea {
+  vertical-align: middle;
+}
+
+body {
+  background: url('../public/img/reminder_body.jpg') no-repeat;
+  background-size: cover;
+  font-family: 'SeoulHangangM';
+  color: #000;
+  font-size: 1.6rem;
+}
+
+h1 {
+  margin-bottom: 100px;
+}
+
+h2 {
+
+  font-weight: normal;
+  background: rgba(225, 184, 184, 0.6) url('../public/img/icon_bell.png') no-repeat 50px center;
+  font-size: 2.0rem;
+  padding: 25px 0 25px 80px;
+  border-radius: 20px 20px 0 0;
+}
+
+p {
+  background: url('../public/img/icon_seed.png') no-repeat left center;
+  padding: 10px 0 10px 25px;
+  font-size: 2.0rem;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /*max-width: calc(100% - 41.66%);
+  margin: 200px auto;*/
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+.list {
+  width: 450px;
+  height: 500px;
+  background: #fff;
+  border-radius: 20px;
+  position: relative;
+  margin-left: 150px;
+}
+
+.txt p:nth-of-type(3) {
+  margin-bottom: 100px;
+}
+
+.form {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #CACACA;
+  padding: 15px 0 15px 50px;
+}
+
+.add-input {
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 3.0rem;
+  color: #333;
+}
+
+.add-button {
+  font-size: 0;
+  background: url('../public/img/icon_plus.png') no-repeat;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+/*ul*/
+.habits {
+  padding: 30px 50px;
+}
+
+/*li*/
+.habit {
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 3.0rem;
+  color: #333;
+  border-bottom: 1px solid #C1C1C1;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.habit-delete {
+  border: 0;
+  background: url('../public/img/icon_trash.png') no-repeat left 5px;
+  float: right;
+  font-size: 0;
+  width: 30px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.stop-watch {
+  height: 50px;
+  width: 290px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding-left: 15px;
+  background: url('../public/img/icon_clock.png') no-repeat 30px center;
+
+}
+
+.timer {
+  width: 100%;
+  transform: translate(130px, 10px);
+}
+
+.digits {
+  font-size: 3rem;
+  color: #666;
+}
+
+<pre>.Control-Buttons {
+  margin: 3rem 0;
+  width: 100%;
+}
+
+.btn-grp {
+  cursor: pointer;
+  display: flex;
+  color: #666;
+  font-size: 2.0rem;
+}
+
+.btn-one {
+  transform: translate(45px, -15px);
+  color: #333;
+
+}
+
+.btn-two {
+  transform: translate(55px, -17px);
+  padding-right: 20px;
+}
+
+.btn-start {
+  cursor: pointer;
+  color: #666;
+  font-size: 3.0rem;
+  transform: translate(55px, -20px);
+
+}
+
+.Year-Month {}
+
+.Day {
+  font-size: 3.0rem;
+  color: #222;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+@media(max-width: 1200px) {
+  .flex {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .list {
+    margin-left: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .txt p {
+    display: none;
+  }
+
+  h1 {
+    margin-bottom: 10px;
+  }
+
+  .Day {
+    padding-left: 10px;
+
   }
 }
