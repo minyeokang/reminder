@@ -100,6 +100,7 @@ p {
   border-radius: 20px;
   position: relative;
   margin-left: 150px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .txt p:nth-of-type(3) {
@@ -179,10 +180,7 @@ p {
   color: #666;
 }
 
-<pre>.Control-Buttons {
-  margin: 3rem 0;
-  width: 100%;
-}
+
 
 .btn-grp {
   cursor: pointer;
