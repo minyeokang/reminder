@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/reminder/static/css/main.160c02f8.css",
+    "main.js": "/reminder/static/js/main.3f8d0230.js",
+    "static/js/787.4b03190c.chunk.js": "/reminder/static/js/787.4b03190c.chunk.js",
+    "static/media/reminder_body.jpg": "/reminder/static/media/reminder_body.af0764564eae6d5fff35.jpg",
+    "service-worker.js": "/reminder/service-worker.js",
+    "index.html": "/reminder/index.html",
+    "main.160c02f8.css.map": "/reminder/static/css/main.160c02f8.css.map",
+    "main.3f8d0230.js.map": "/reminder/static/js/main.3f8d0230.js.map",
+    "787.4b03190c.chunk.js.map": "/reminder/static/js/787.4b03190c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.160c02f8.css",
+    "static/js/main.3f8d0230.js"
+  ]
+}
