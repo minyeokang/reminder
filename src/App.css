@@ -77,23 +77,20 @@ p {
 .App {
   max-width: calc(100% - 50px);
   margin: 100px auto;
-  width: 100vw;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
 }
 
 .flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
 
 
 .list {
+  overflow-y: scroll;
+
   width: 450px;
   height: 500px;
   background: #fff;
@@ -101,6 +98,7 @@ p {
   position: relative;
   margin-left: 150px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+
 }
 
 .txt p:nth-of-type(3) {
@@ -110,24 +108,32 @@ p {
 .form {
   margin-top: 50px;
   border-top: 1px solid #CACACA;
-  padding: 15px 0 15px 50px;
+  position: relative;
 }
 
 .add-input {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 100%;
   font-family: 'Nanum Pen Script', cursive;
   font-size: 3.0rem;
   color: #333;
+  padding-left: 30px;
+  border-radius: 0 0 20px 20px;
+
 }
 
 .add-button {
+  position: absolute;
+  right: 30px;
+  top: 15px;
   font-size: 0;
   background: url('../public/img/icon_plus.png') no-repeat;
   width: 40px;
   height: 40px;
   border: 0;
-  margin-right: 50px;
   cursor: pointer;
-  float: right;
 }
 
 /*ul*/
@@ -238,11 +244,4 @@ p {
   }
 }
 
-@media(max-width: 500px) {
-  .list {
-    width: 300px;
-  }
-
-
-
-}
+@media(max-width: 500px) {}
