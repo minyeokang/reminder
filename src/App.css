@@ -250,4 +250,13 @@ p {
   .form {
     width: 300px;
   }
+
+  .add-input {
+    width: 300px;
+  }
+
+  .add-button {
+    width: 20px;
+    height: 20px;
+  }
 }
