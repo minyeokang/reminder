@@ -108,12 +108,7 @@ p {
 }
 
 .form {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  margin-top: 50px;
   border-top: 1px solid #CACACA;
   padding: 15px 0 15px 50px;
 }
@@ -132,6 +127,7 @@ p {
   border: 0;
   margin-right: 50px;
   cursor: pointer;
+  float: right;
 }
 
 /*ul*/
@@ -247,16 +243,6 @@ p {
     width: 300px;
   }
 
-  .form {
-    width: 300px;
-  }
 
-  .add-input {
-    width: 300px;
-  }
 
-  .add-button {
-    width: 20px;
-    height: 20px;
-  }
 }
