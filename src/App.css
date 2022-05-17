@@ -241,3 +241,9 @@ p {
 
   }
 }
+
+@media(max-width: 500px) {
+  .list {
+    width: 300px;
+  }
+}
